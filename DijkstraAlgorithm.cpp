@@ -98,7 +98,7 @@ int main() {
         if (isValidVertex(from, numVertices) && isValidVertex(to, numVertices)) {
             // Check if 'from' and 'to' vertices are within the valid range (0 to numVertices-1)
             graph[from][to] = weight;  // Set the weight of the edge from 'from' to 'to'
-            graph[to][from] = weight;  // Assuming it's an undirected graph, set the weight in both directions
+            graph[to][from] = weight;  // Since it's an undirected graph, set the weight in both directions
         }
         else {
             std::cout << "Invalid edge input. Please enter valid from and to vertices within the range [0, " << numVertices - 1 << "].\n";
@@ -116,3 +116,4 @@ int main() {
 
     return 0;
 }
+//
